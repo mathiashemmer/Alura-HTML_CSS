@@ -1,0 +1,81 @@
+HTML é uma linguagem de marcação de texto, interpretada pelos navegadores para dar identidade extrutural aos sites. Junto
+ao HTML, o CSS entrega o visual do site, e o Javascript permite adicionar funcionalidades lógicas.
+
+O HTML utiliza tags para marcar o texto e definir como apresentalo ao usuário. As tags são colocadas entre "<" e ">". Tipicamente
+existem a abertura e o encerramento de uma tag, mas algumas possuem só abertura, se não forem visuais e sim de informação
+
+Tipos de tags:
+
+<h1> </h1> (ou <h2>, <h3>...): São tags de titulo, ou Headers, que marcam o texto como negrito e aumentam a fonte.
+
+<strong> </strong>: Indica uma frase forte, dando destaque e marcando em negrito.
+
+<em> </em>: Indica ênfase no texto, para marcar com itálico.
+
+Alêm de tags visuais, o HTML possui tags de dados, que servem para passar informações ao navegador que irá consumir.
+
+Algumas tags:
+
+<!DOCTYPE>: Indica a versão de HTML utilizada. Atualmente, não especificar uma versão indica ao navegador que ele deve usar
+a versão mais recente disponível.
+
+<html>: Marca o conteúdo a ser renderizado no navegador como um html de fato. É possível passar propriedades para essa tag
+como em "<html lang=pt-BR>". A propriedade lang indica qual idioma é utilizado na página. Isso não significa que o navegador
+vai traduzir o que você escrever.
+
+<meta>: São metadados passados ao navegador. Um deles é o "charset", como em "<meta charset="UTF-8">", que indica qual o
+dicionário de caracteres utilizados. o UTF-8 é um padrão que utiliza vários caracteres, incluindo com acentos e outros 
+caracteres especiais.
+
+<title>: Indica qual o titulo na página aparece no navegador.
+
+<head>: Separa as informações que estão sendo passadas para o navegador, que não fazem parte do visual da página.
+
+<body>: Indica o corpo visível da página, o conteúdo que o navegador deve renderizar;
+
+O CSS é uma forma de estilizar o conteuda da página, deixando a identidade visual mais atraente ao usuário. significa
+Cascading Style Sheet, ou folha de estilização em cascata.
+
+Podemos utilizar o CSS de três formas:
+- CSS Inline: aplicamos uma propriedade na tag chamada "style", e passamos o css que desejamos aplicar
+<p style="color: blue"> <p>
+- CSS Inblock(?): Utiliza a tag <style> </style> para definir o estilo do conteudo, dentro da tag <head>
+- CSS externo: As definições de estilo ficam em outro arquivo, e são importadas no <head>
+<link rel="stylesheet" href="style.css">
+
+Alguns estilos:
+
+text-align: Alinhamento horizontal do texto, pode ser center por exemplo, que centraliza horizontalmente o texto.
+
+font-size: Identifica o tamanho do texto. Pode ser em pixels (px).
+
+background-color: Aplica uma cor de fundo.
+
+color: Aplica uma cor no texto.
+
+Cores em CSS:
+
+Podem ser representadas de três formas:
+- RGB: rgb(a,b,c), onde a,b,c são números de 0 a 255, e representam os tons Vermelho, Verde e Azul. A combinação monta a cor
+- Hexadecimal: #AABBCC, onde A, B, C são números em hexadecimal de 0 a F (0123456789ABCDEF), e representam os tons Vermelho, Verde e Azul
+- Nomes: Alguns nomes padrões em ingles, como red, blue, green, yellow, grey.
+
+Algumas outras propriedades do CSS alteram caracteristicas físicas básicas dos elementos
+
+height e width: Altura e Largura do elemento.
+
+margin e padding: As margens externas e internas do elemento. O padding faz parte do height e width do elemento, então
+o tamanho real do elemento é ajustado quando o padding é alterado. Por exemplo, um elemento com 20px de altura, ao ser
+adicionado um padding de 20px no topo e no fundo, a altua será ajustada para comportar os 20px de cada parte, dando uma
+altura real de 60px (20px padding topo + 20px do elemento + 20px padding fundo). Isso é útil para elementos internos.
+Já para os elementos adjacentes, a margin é considerada, então o tamanho virtual do elemento é a soma das margens e do
+elemento. Por exemplo, um elemento com 20px de altura e uma margin inferior de 20px deslocaria o elemento abaixo
+por 40px (20px do elemento + 20px da margin dele).
+
+- Para selecionar um elemento no css, basta escrever a tag: p {} Aplica a todos os <p>
+- Para selecionar um elemento filho de outro elemento, basta escrever o pai, seguido pelo filho: p em {} Aplica a todos os <em> filhos de um <p>
+- Para selecionar um identificador (id), basta escrever #nome, onde nome é o id: #meu_id {} Aplica a todos os id="meu_id"
+- Para selecionar uma classe (class), bastar escrever .nome, onde nome é a class: .minha_classe {} Aplica a todos os class="minha_classe"
+
+
+
